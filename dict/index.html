@@ -19,18 +19,29 @@
       <i class="text-slate-900 my-2 mx-1 fa-solid fa-biking text-3xl"></i>
       <div class="text-2xl my-2 mx-1 font-bold text-white">CityCycle</div>
     </div>
-    <ul class="flex content-center items-center md:flex space-x-8">
+    <div class="md:hidden">
+      <button id="navbar-toggle" class="text-white focus:outline-none">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <ul id="navbar-menu" class="hidden content-center items-center md:flex space-x-8">
       <!-- <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Home</li> -->
       <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Find a Bike</li>
       <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Stations</li>
       <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Pricing</li>
       <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Contact</li>
     </ul>
-    <div>
+    <div class="hidden md:block">
       <button
-        class="font-medium text-lg cursor-pointer rounded-3xl p-1 px-5 text-white bg-slate-800 hover:bg-slate-900">
+        class="font-medium text-lg cursor-pointer rounded-3xl p-2 px-6 text-white bg-slate-800 hover:bg-slate-900 transition duration-300">
         <i class="fa-solid fa-user-tie p-1"></i>
         Account
+      </button>
+    </div>
+    <div class="md:hidden">
+      <button
+        class="font-medium text-lg cursor-pointer rounded-full p-2 text-white bg-slate-800 hover:bg-slate-900 transition duration-300">
+        <i class="fa-solid fa-user-tie p-1"></i>
       </button>
     </div>
   </nav>
@@ -315,6 +326,7 @@
   <!-- footer end  -->
   <script src="https://kit.fontawesome.com/796cbe5f70.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
