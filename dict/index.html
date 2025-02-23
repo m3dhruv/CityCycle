@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityCycle - Bike Sharing Platform</title>
+  <link href="./style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fontawesome.com/icons/location-dot?f=classic&s=solid">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="absolute z-100 container flex content-center items-center justify-between px-10 py-3 top-0 w-full">
+    <div class="flex">
+      <!-- <img class="size-8 my-2 mx-1 text-white" src="./images/bike.png" alt="" /> -->
+      <i class="text-slate-900 my-2 mx-1 fa-solid fa-biking text-3xl"></i>
+      <div class="text-2xl my-2 mx-1 font-bold text-white">CityCycle</div>
+    </div>
+    <ul class="flex content-center items-center md:flex space-x-8">
+      <!-- <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Home</li> -->
+      <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Find a Bike</li>
+      <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Stations</li>
+      <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Pricing</li>
+      <li class="font-medium mx-4 text-lg cursor-pointer text-white hover:text-slate-900">Contact</li>
+    </ul>
+    <div>
+      <button
+        class="font-medium text-lg cursor-pointer rounded-3xl p-1 px-5 text-white bg-slate-800 hover:bg-slate-900">
+        <i class="fa-solid fa-user-tie p-1"></i>
+        Account
+      </button>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+
+
+  <!-- hero section start -->
+  <main class="relative h-screen">
+    <div class="inset-0 absolute">
+      <img class="absolute w-full h-full object-cover" src="./images/hero.jpg" alt="City bikes" />
+      <div class="absolute inset-0 bg-black/60" />
+    </div>
+
+    <div class="relative z-10 container mx-auto px-6 h-[calc(110vh-88px)] flex items-center">
+      <div class="w-2xl">
+        <h1 class="text-5xl md:text-5xl font-bold text-white mb-6">
+          Explore the City on Two Wheels
+        </h1>
+        <p class="text-xl text-white/90 mb-8">
+          Join thousands of riders who choose CityCycle for convenient, eco-friendly urban transportation.
+          Rent a bike instantly and ride anywhere in the city.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-slate-800 text-white px-8 cursor-pointer py-3 rounded-full text-lg font-semibold hover:bg-slate-900 transition">
+            Find a Bike
+          </button>
+          <button
+            class="bg-white text-slate-900 px-8 py-3 cursor-pointer rounded-full text-lg font-semibold hover:bg-gray-200 transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- hero section end -->
+
+
+
+  <!-- cart section end -->
+  <section id="how-it-works" class="pt-15 pb-25 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-slate-900  mb-10">How CityCycle Works</h2>
+      <div class="grid md:grid-cols-3 gap-4 py-5">
+        <div class="text-center bg-white rounded-xl hover:shadow-md transition p-5">
+          <i class="text-slate-900 fa-solid w-12 h-12 fa-solid fa-location-dot text-3xl"></i>
+          <h3 class="text-xl text-slate-900 font-semibold mb-2">Find a Station</h3>
+          <p class="text-slate-600">Locate the nearest bike station using our real-time map</p>
+        </div>
+        <div class="text-center bg-white rounded-xl hover:shadow-md transition p-5">
+          <i class="text-slate-900 fa-solid w-12 h-12 fa-solid fa-credit-card text-3xl"></i>
+          <h3 class="text-xl text-slate-900 font-semibold mb-2">Pay & Unlock</h3>
+          <p class="text-slate-600">Choose your plan and unlock a bike instantly</p>
+        </div>
+        <div class="text-center bg-white rounded-xl hover:shadow-md transition p-5">
+          <i class="text-slate-900 fa-solid w-12 h-12  fa-biking text-3xl"></i>
+          <h3 class="text-xl text-slate-900 font-semibold mb-2">Ride & Return</h3>
+          <p class="text-slate-600">Enjoy your ride and return to any station</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cart section end -->
+
+
+  <!-- slider section start  -->
+  <section class="pb-25 pt-10 bg-gray-50 ">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Experience the Future of Urban Mobility</h2>
+      <div class="relative h-[450px] max-w-6xl overflow-hidden rounded-2xl bg-slate-900 shadow-xl mx-auto">
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+
+          <!-- item-1 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item="slide">
+            <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+              <!-- Image Side -->
+              <div class="relative h-[250px] md:h-full">
+                <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&q=80&w=1200"
+                  alt="MYBYK Electric" class="h-[450px] w-full object-cover" />
+                <div class="absolute inset-0 bg-black/20"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="relative p-6 md:p-10 flex items-center bg-white">
+                <div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+                    MYBYK Electric
+                  </h3>
+                  <p class="text-base md:text-lg text-slate-800 font-semibold mb-3">
+                    with PowerPedal™
+                  </p>
+                  <p class="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+                    Take your commuting to the next level with our PowerPedal™ enabled e-bike and make your daily
+                    rides
+                    a breeze. Ride worry free of gas prices, traffic jams, and sweaty commutes.
+                  </p>
+                  <button
+                    class="bg-slate-700 hover:bg-slate-800 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item-2 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item="slide">
+            <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+              <!-- Image Side -->
+              <div class="relative h-[250px] md:h-full">
+                <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&q=80&w=1200"
+                  alt="MYBYK Electric" class="h-[450px] w-full object-cover" />
+                <div class="absolute inset-0 bg-black/20"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="relative p-6 md:p-10 flex items-center bg-white">
+                <div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+                    Smart Lock System
+                  </h3>
+                  <p class="text-base md:text-lg text-slate-800 font-semibold mb-3">
+                    Secure & Convenient
+                  </p>
+                  <p class="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+                    Our advanced smart lock system ensures your bike is always secure. Unlock with just your
+                    smartphone and ride away in seconds.
+                  </p>
+                  <button
+                    class="bg-slate-700 hover:bg-slate-800 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- item-3 -->
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item="slide">
+            <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+              <!-- Image Side -->
+              <div class="relative h-[250px] md:h-full">
+                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&q=80&w=1200"
+                  alt="MYBYK Electric" class="h-[450px] w-full object-cover" />
+                <div class="absolute inset-0 bg-black/20"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="relative p-6 md:p-10 flex items-center bg-white">
+                <div>
+                  <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                    Urban Mobility
+                  </h3>
+                  <p class="text-base md:text-lg text-slate-800 font-semibold mb-3">
+                    Designed for City Life
+                  </p>
+                  <p class="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">
+                    Navigate through city streets with ease. Perfect for commuting, errands, or leisure rides with
+                    comfortable seating and ample storage.
+                  </p>
+                  <button
+                    class="bg-slate-700 hover:bg-slate-800 text-white px-5 py-2 rounded-lg font-semibold transition-colors text-sm">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- slider section end  -->
+
+
+
+  <!-- price section start  -->
+  <section id="pricing" class="pb-30 pt-5 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Simple Pricing</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Single Ride</h3>
+          <p class="text-4xl font-bold mb-6 text-slate-800">$3.99</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-clock text-slate-800 mr-2"></i>30-minute
+              ride</li>
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-user-tie text-slate-800 mr-2"></i>One time
+              access</li>
+            <li class="flex items-center font-semibold"><i
+                class="fa-solid fa-map-location-dot text-slate-800 mr-2"></i>Unlock any bike</li>
+          </ul>
+          <button class="w-full bg-slate-800 text-white py-2 rounded-full hover:bg-slate-900">
+            Choose Plan
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md transform scale-105 border-2 border-slate-900">
+          <div class="absolute top-0 right-0 bg-slate-800 text-white px-4 py-1 rounded-bl-lg">
+            Popular
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Day Pass</h3>
+          <p class="text-4xl font-bold mb-6 text-slate-800">$14.99</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-clock text-slate-800 mr-2"></i>Unlimited
+              30-min rides</li>
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-user-tie text-slate-800 mr-2"></i>24-hour
+              access</li>
+            <li class="flex items-center font-semibold"><i
+                class="fa-solid fa-map-location-dot text-slate-800 mr-2"></i>All stations included</li>
+          </ul>
+          <button class="w-full bg-slate-800 text-white py-2 rounded-full hover:bg-slate-900">
+            Choose Plan
+          </button>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-4">Monthly Pass</h3>
+          <p class="text-4xl font-bold mb-6 text-slate-800">$29.99</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-clock text-slate-800 mr-2"></i>Unlimited
+              45-min rides</li>
+            <li class="flex items-center font-semibold"><i class="fa-solid fa-user-tie text-slate-800 mr-2"></i>Priority
+              support</li>
+            <li class="flex items-center font-semibold"><i
+                class="fa-solid fa-map-location-dot text-slate-800 mr-2"></i>Reserved parking</li>
+          </ul>
+          <button class="w-full bg-slate-800 text-white py-2 rounded-full hover:bg-slate-900">
+            Choose Plan
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- price section end  -->
+
+
+  <!-- footer start  -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-6">
+            <i class="text-white fa-solid fa-biking text-xl"></i>
+            <span class="text-xl font-bold">CityCycle</span>
+          </div>
+          <p class="text-gray-400">
+            Making urban mobility sustainable, convenient, and fun.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">About Us</a></li>
+            <li><a href="#" class="hover:text-white">Locations</a></li>
+            <li><a href="#" class="hover:text-white">Pricing</a></li>
+            <li><a href="#" class="hover:text-white">Safety</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Support</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white">Help Center</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <div class="flex items-center space-x-2 text-gray-400 mb-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>1-800-CITYCYCLE</span>
+          </div>
+          <p class="text-gray-400">
+            123 Bike Street<br />
+            New York, NY 10001
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 CityCycle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end  -->
+  <script src="https://kit.fontawesome.com/796cbe5f70.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
